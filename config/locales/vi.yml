@@ -1,0 +1,30 @@
+vi:
+  time:
+    formats:
+      default: "%d/%m/%Y %H:%M:%S"
+      long: "%d/%m/%Y %H:%M:%S"
+      short: "%d/%m/%Y %H:%M"
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      long: "%d/%m/%Y"
+      short: "%d/%m"
+  activerecord:
+    models:
+      fire_alert: "Cảnh báo cháy"
+    attributes:
+      fire_alert:
+        timestamp: "Thời gian"
+        location: "Vị trí"
+        camera_id: "ID Camera"
+        image_file_path: "Đường dẫn hình ảnh"
+        confidence_score: "Độ tin cậy"
+        status: "Trạng thái"
+        is_sent_to_web: "Đã gửi lên web"
+  active_admin:
+    fire_alerts:
+      index:
+        title: "Danh sách cảnh báo cháy"
+        image: "Hình ảnh"
+        invalid_image_url: "URL hình ảnh không hợp lệ"
+        no_image: "Không có hình ảnh" 

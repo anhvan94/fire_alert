@@ -8,17 +8,17 @@ ActiveAdmin.register FireAlert do
     column :location
     column :camera_id
 
-    column "Image" do |fire_alert|
+    column t('active_admin.fire_alerts.index.image') do |fire_alert|
       if fire_alert.image_file_path.present?
         begin
           full_image_url = "#{request.protocol}#{request.host_with_port}#{fire_alert.image_file_path}"
           
           image_tag(full_image_url, style: "width: 300px; height: 300px; object-fit: contain; max-width: 400px; max-height: 400px; margin: 0 auto;")
         rescue StandardError => e
-          status_tag "Invalid Image URL", class: "error"
+          status_tag t('active_admin.fire_alerts.index.invalid_image_url'), class: "error"
         end
       else
-        status_tag "No Image", class: "warning"
+        status_tag t('active_admin.fire_alerts.index.no_image'), class: "warning"
       end
     end
 

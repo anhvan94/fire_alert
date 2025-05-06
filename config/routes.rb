@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   resources :fire_alerts, only: [:create]
+  resources :employees, only: [:create]
 end

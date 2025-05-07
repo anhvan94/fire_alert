@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   # root "posts#index"
   resources :fire_alerts, only: [:create]
   resources :employees, only: [:create]
+  resources :access_logs, only: [:create]
 end

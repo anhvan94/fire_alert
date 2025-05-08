@@ -12,15 +12,32 @@ vi:
   activerecord:
     models:
       fire_alert: "Cảnh báo cháy"
+      access_log: "Nhật ký ra vào"
+      employee: "Nhân viên"
     attributes:
       fire_alert:
         timestamp: "Thời gian"
         location: "Vị trí"
         camera_id: "ID Camera"
-        image_file_path: "Đường dẫn hình ảnh"
+        image_file_path: "Hình ảnh"
         confidence_score: "Độ tin cậy"
         status: "Trạng thái"
         is_sent_to_web: "Đã gửi lên web"
+      access_log:
+        employee: "Nhân viên"
+        employee_id: "ID Nhân viên"
+        timestamp: "Thời gian"
+        status: "Trạng thái"
+        device: "Thiết bị"
+        image_file_path: "Hình ảnh"
+      employee:
+        name: "Tên"
+        full_name: "Họ và tên"
+        employee_id: "ID Nhân viên"
+        department: "Phòng ban"
+        position: "Chức vụ"
+        status: "Trạng thái"
+        image_file_path: "Hình ảnh"
   active_admin:
     fire_alerts:
       index:

@@ -28,7 +28,7 @@ vi:
         employee_id: "ID Nhân viên"
         timestamp: "Thời gian"
         status: "Trạng thái"
-        device: "Thiết bị"
+        device_id: "Thiết bị"
         image_file_path: "Hình ảnh"
       employee:
         name: "Tên"
